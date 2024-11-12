@@ -5,6 +5,6 @@ public class Bill3 {
 	    double sumBill =  Double.parseDouble(args[3]);
 		double sumForPerson = Math.ceil(sumBill/3);
 		System.out.println("Dear " + args[0] + ", " + args[1] + ", " +
-		 args[2] + ": pay " + sumForPerson + " Shekels each.");
+		 args[2] + ": pay " + sumForPerson + " Shekels each");
 	}
 }
