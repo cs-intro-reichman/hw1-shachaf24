@@ -6,7 +6,7 @@ public class NumWords {
 		int tens = (givenNumber/10)%10 ;  
         int unitNotation = givenNumber%10;
 
-        System.out.println(hundreds + " hundred, " + tens + " tens, " +
+        System.out.println(hundreds + " hundreds, " + tens + " tens, " +
 		 "and " + unitNotation + " ones.");
 	    
 	}
