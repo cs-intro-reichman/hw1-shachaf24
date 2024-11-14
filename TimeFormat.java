@@ -18,12 +18,14 @@ public class TimeFormat {
 		}	 
 		else if (hours == 000) {
 			 System.out.println(" 0:00" + " Am");
-	 	}	 
-	
-		
-		 
+	 	}
+		else if (hours < 12 ) {
+			System.out.println(hours + ":" + minutes + " Am");
+		}
+			 
 	} 
 }
+
 
 
 
