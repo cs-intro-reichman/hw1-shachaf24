@@ -7,17 +7,17 @@ public class TimeFormat {
 
 		int hours = Integer.parseInt("" + args[0].charAt(0) + args[0].charAt(1));
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
-		int subtract = 12 ; 
+	
 
 		if (hours > 12 ) { 
 
-			System.out.println(hours - subtract + " PM");
+			System.out.println((hours - 12) + ":" + minutes + " PM");
         }
 		else if (hours == 12 ) { 
-			 System.out.println(hours + " PM");
+			 System.out.println(hours + ":" + minutes + " PM");
 		}	 
 		else if (hours == 000) {
-			 System.err.println(" 0:00" + " Am");
+			 System.out.println(" 0:00" + " Am");
 	 	}	 
 	
 		
