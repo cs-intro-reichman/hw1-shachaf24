@@ -19,7 +19,7 @@ public class TimeFormat {
 				System.out.println(hours + ":0" + minutes + " " + "PM");
 					else System.out.println(hours + ":" + minutes + " PM");
 		}	 
-		else if (hours == 000) {
+		else if (hours == 0000) {
 			 System.out.println("0:00" + " Am");
 	 	}
 		else if (hours < 12 ) {
