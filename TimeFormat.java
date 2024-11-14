@@ -10,19 +10,26 @@ public class TimeFormat {
 	
 
 		if (hours > 12 ) { 
-
-			System.out.println((hours - 12) + ":" + minutes + " PM");
+			if(minutes/10==0)
+				System.out.println((hours - 12) + ":0" + minutes + " " + "PM");
+					else System.out.println((hours - 12) + ":" + minutes + " PM");
         }
 		else if (hours == 12 ) { 
-			 System.out.println(hours + ":" + minutes + " PM");
+			if(minutes/10==0)
+				System.out.println(hours + ":0" + minutes + " " + "PM");
+					else System.out.println(hours + ":" + minutes + " PM");
 		}	 
 		else if (hours == 000) {
-			 System.out.println(" 0:00" + " Am");
+			 System.out.println("0:00" + " Am");
 	 	}
 		else if (hours < 12 ) {
-			System.out.println(hours + ":" + minutes + " Am");
+			if(minutes/10==0)
+				System.out.println(hours + ":0" + minutes + " " + "AM");
+					else System.out.println(hours + ":" + minutes + " " + "AM");
 		}
-			 
+			
+		//if(minutes/10==0)
+		//System.out.println(hours + ":0" + minutes + " " + "AM");
 	} 
 }
 
